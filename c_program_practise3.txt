@@ -1,0 +1,15 @@
+// swapping of two numbers without temporary variable
+
+#include <stdio.h>
+int main()
+{
+int num1,num2;
+printf("Enter the two numbers");
+scanf("%d %d",&num1,&num2);
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+printf("number 1 value %d\n",num1);
+printf("number 2 value %d",num2);
+return 0;
+}

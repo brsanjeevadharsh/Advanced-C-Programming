@@ -1,0 +1,16 @@
+// practice for number when given 1 they should print 2 and vice versa
+
+#include <stdio.h>
+int main()
+{
+int num;
+printf("Enter the number");
+scanf("%d",&num);
+int num1=(num%2)+1;
+int num2=3-num;
+int num3=2/num;
+printf("Original numbers %d",num);
+printf("Duplicate numbers %d",num1);
+printf("Duplicate numbers %d",num2);
+printf("Duplicate numbers %d",num3);
+}

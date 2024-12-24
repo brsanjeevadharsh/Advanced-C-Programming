@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the three sides of the triangle\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    if((a+b)>c && (b+c)>a && (c+a)>b)
+            {
+                printf("Triangle is valid");
+            }
+    else
+    {
+        printf("Invalid Triangle");
+    }
+return 0;
+}

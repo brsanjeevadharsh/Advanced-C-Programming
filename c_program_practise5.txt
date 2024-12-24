@@ -1,0 +1,11 @@
+// increament and decreament operator
+
+#include "stdio.h"
+int main()
+{
+int a=13;
+int b=a++ + ++a + a-- + a++;
+printf("b value %d",b);
+printf("a value %d",a);
+return 0;
+}

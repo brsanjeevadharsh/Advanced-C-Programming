@@ -1,0 +1,23 @@
+// greatest of three numbers
+
+#include "stdio.h"
+int main()
+{
+int num1,num2,num3;
+printf("Enter the three numbers");
+scanf("%d",&num1);
+scanf("%D",&num2);
+scanf("%D",&num3);
+if(num1>num2 & num1>num3)
+{
+printf("%d number is greater than %d and %d",num1,num2,num3);
+}
+else if(num2>num3 & num2>num1)
+{
+    printf("%d number is greater than %d and %d",num2,num1,num3);
+}
+else
+{
+    printf("%d number is greater than %d and %d",num3,num1,num2);
+}
+}

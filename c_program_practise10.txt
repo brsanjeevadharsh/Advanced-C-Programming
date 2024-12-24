@@ -1,0 +1,35 @@
+#include <math.h>
+#include <stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("Enter the a value");
+    scanf("%f",&a);
+    printf("Enter the b value");
+    scanf("%f",&b);
+    printf("Enter the c value");
+    scanf("%f",&c);
+    float total=(b*b)-(4*a*c);
+    if(total>0)
+    {
+        float r1=(((-b)+(sqrt(total)))/(2*a));
+        float r2=(((-b)-(sqrt(total)))/(2*a));
+        printf("r1 value is %f\n",r1);
+        printf("r2 value is %f",r2);
+    }
+    else if(total==0)
+    {
+        float r1=((-b)/(2*a));
+        float r2=((-b)/(2*a));
+        printf("r1 value is %f\n",r1);
+        printf("r2 value is %f",r2);
+    }
+    else
+    {
+        float r1=((-b)/(2*a));
+        float im=(sqrt(-total)/(2*a));
+        printf("r1 value is %f\n",r1);
+        printf("Imaginary value is %f",im);
+    }
+return 0;
+}

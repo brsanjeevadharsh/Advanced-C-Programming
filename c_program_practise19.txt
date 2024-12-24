@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int num,n;
+    printf("Enter the table number:");
+    scanf("%d",&num);
+    printf("Enter the number of steps:");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d * %d = %d\n",num,i,(num*n));
+    }
+}

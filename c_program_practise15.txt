@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+    char sstart;
+    int price;
+     printf("g-Gulab jamun\n");
+    printf("p-Mysore pak\n");
+    printf("j-Jalebi\n");
+    printf("r-Rasgulla\n");
+    printf("m-Milk peda\n");
+    printf("c-Coconut barfi\n");
+    printf("l-laddu\n");
+    printf("Enter the first letter sweets for billing: ");
+    scanf("%c",&sstart);
+    switch(sstart)
+    {
+        case 'g':
+        printf("g-Gulab jamun");
+        printf("1kg price - 650");
+        price=650;
+        break;
+        case 'p':
+        printf("p-Mysore pak");
+        printf("1kg price - 690");
+        price=690;
+        break;
+        case 'j':
+        printf("j-Jalebi");
+        printf("1kg price - 780");
+        price=780;
+        break;
+        case 'r':
+        printf("r-Rasgulla");
+        printf("1kg price - 580");
+        price=580;
+        break;
+        case 'm':
+        printf("m-Milk peda");
+        printf("1kg price - 450");
+        price=450;
+        break;
+        case 'c':
+       printf("c-Coconut barfi");
+        printf("1kg price - 440");
+        price=440;
+        break;
+        case 'l':
+         printf("l-laddu");
+        printf("1kg price - 580");
+        price=580;
+        break;
+        default:
+        printf("Invalid sweet menu selected");
+    }
+    return 0;
+}

@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main()
+{
+    float x[100];
+    float total;
+    int n;
+    printf("Enter the number of subjects: ");
+    scanf("%d",&n);
+    printf("Enter the marks:\n");
+    for (int i=1;i<=n;i++)
+    {
+        scanf("%f",&x[i]);
+    }
+    for (int i=1;i<=n;i++)
+    {
+        printf("%.2f\n",x[i]);
+    }
+    for (int i=1;i<=n;i++)
+    {
+        total = total+x[i];
+    }
+    printf("The total marks is %.2f\n",total);
+    float average=total/n;
+    if(average>90 && average<=100)
+    {
+        printf("A");
+    }
+    else if(average>80 && average<=90)
+    {
+        printf("B");
+    }
+    else if(average>70 && average<=80)
+    {
+        printf("C");
+    }
+    else if(average>60 && average<=70)
+    {
+        printf("D");
+    }
+    else if(average>50 && average<=60)
+    {
+        printf("E");
+    }
+    else if(average>40 && average<=50)
+    {
+        printf("F");
+    }
+    else if(average<=40)
+    {
+        printf("FAIL - Failure is the stepping stone to success");
+    }
+    else
+    {
+        printf("Invalid credential entered");
+    }
+
+}

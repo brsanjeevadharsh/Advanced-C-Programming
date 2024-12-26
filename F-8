@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    int squareroot=pow(num,0.5);
+    if(squareroot*squareroot==num)
+    {
+        printf("Perfect square");
+    }
+    else
+    {
+        printf("Not a perfect square");
+    }
+}

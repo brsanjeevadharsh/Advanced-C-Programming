@@ -1,0 +1,8 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    printf("%d",printf("%d",printf("Welcome mkce")));
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+int perfect(int num)
+{
+    int s=0;
+    for(int i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            s=s+i;
+        }
+    }
+    return s;
+}
+int main()
+{
+    int num;
+    printf("Enter the number");
+    scanf("%d",&num);
+    if(perfect(num)==num)
+    {
+        printf("Given number %d is perfect number",num);
+    }
+    else
+    {
+        printf("Given number %d is not a perfect number",num);
+    }
+}

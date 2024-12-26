@@ -1,0 +1,42 @@
+// To check the give number is armstrong or not using functions
+#include <stdio.h>
+#include <math.h>
+int count(int num)
+{
+int temp=num;
+int count1=0;
+    while(num!=0)
+    {
+        num=num/10;
+        count1++; 
+    }
+    return count1;
+}
+
+int armstrong(int z,int num)
+{
+    int s=0;
+    while(num!=0)
+    {
+        int n1=num%10;
+        s=s+pow(n1,z);
+        num=num/10;
+    }
+    return s;
+}
+int main()
+{
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    int z=count(num);
+    printf("No of digits: %d\n",z);
+    if(armstrong(z,num)==num)
+    {
+        printf("Armstrong number");
+    }
+    else
+    {
+        printf("Not an armstrong number");
+    }
+}

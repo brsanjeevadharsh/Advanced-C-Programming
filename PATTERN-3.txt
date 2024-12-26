@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    printf("Enter the number: ");
+    int num;
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+     for(int k=1;k<=num-i;k++)
+     {
+      printf(" ");   
+     }
+       {
+        for(int j=1;j<=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+}
+}
+
+Enter the number: 5
+    1
+   22
+  333
+ 4444
+55555
+
+
+=== Code Execution Successful ===

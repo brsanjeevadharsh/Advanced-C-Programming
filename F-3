@@ -1,0 +1,13 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+  printf("%c",printf("sanjeevadharsh_ramprasath_shivaprasath_pradeep_kiruthivarma_saravana"));
+
+    return 0;
+}
+
+//OUTPUT
+// sanjeevadharsh_ramprasath_shivaprasath_pradeep_kiruthivarma_saravanaD
+

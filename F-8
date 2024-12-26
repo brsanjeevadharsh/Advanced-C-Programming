@@ -1,0 +1,33 @@
+// To check whether the given number is strong number or not
+#include <stdio.h>
+int strong(int num)
+{
+int sum=0,num1;
+while(num!=0)
+{
+num1=num%10;
+int fact=1;
+for(int i=1;i<=num1;i++)
+{
+    fact=fact*i;
+}
+sum=sum+fact;
+num=num/10;
+}
+return sum;
+}
+
+int main()
+{
+int num;
+printf("Enter the number: ");
+scanf("%d",&num);
+if(strong(num)==num)
+{
+    printf("The given number is strong number%d",strong(num));
+}
+else
+{
+    printf("The given number is not strong number%d",strong(num));
+}
+}

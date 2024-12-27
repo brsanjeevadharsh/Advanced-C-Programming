@@ -1,0 +1,46 @@
+//To find the duplicate elements having more no of times
+#include <stdio.h>
+int main() 
+{
+    int size,count=0,max=0;
+    printf("Enter the size: ");
+    scanf("%d",&size);
+    int arr[size];
+    printf("Enter the elements\n");
+    for(int i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<size;i++)
+    {
+        count=0;
+        for(int j=size;j>=0;j--)
+        {
+        if(arr[i]==arr[j])
+        {
+            count++;
+            if(count>max)
+            {
+                max=count;
+            }
+        }
+    }
+    }
+    printf("Elements in the array: ");
+    for(int i=0;i<size;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+    printf("count of elements having n number of elements: %d",max);
+}
+
+// Enter the size: 5
+// Enter the elements
+// 10
+// 10
+// 10
+// 3
+// 2
+// Elements in the array: 10 10 10 3 2 
+// count of elements having n number of elements: 3

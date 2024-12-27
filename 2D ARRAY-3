@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+    int row,col;
+    printf("Enter the no of rows and columns: ");
+    scanf("%d %d",&row,&col);
+    int arr[row][col];
+    printf("Enter the elements \n");
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    // Calculating diagonal value1
+    int value1=1;
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            if(i==j)
+            {
+                value1=value1*arr[i][j];
+            }
+        }
+    }
+    // Calculating diagonal   value2
+    int value2=1;
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            if(i+j==((row+col)/2)-1)
+            {
+                value2=value2*arr[i][j];
+            }
+        }
+    }
+    printf("Value1: %d\n",value1);
+    printf("Value2: %d\n",value2);
+    int total=value1+value2;
+    printf("Resultant value: %d",total);
+}

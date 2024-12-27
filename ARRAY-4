@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int no;
+    printf("Enter the total no of rooms: ");
+    scanf("%d",&no);
+    int entry[no],exit[no],total[no],total1=0;
+    printf("No of people entered: \n");
+    for(int i=0;i<no;i++)
+    {
+        scanf("%d",&entry[i]);
+    }
+    printf("No of people quit: \n");
+    for(int i=0;i<no;i++)
+    {
+        scanf("%d",&exit[i]);
+    }
+    int sum=0,max=0;
+   for(int i=0;i<no;i++)
+   {
+       sum=sum+entry[i]-exit[i];
+       if(sum>max)
+       {
+           max=sum;
+       }
+   }
+   printf("%d",max);
+}

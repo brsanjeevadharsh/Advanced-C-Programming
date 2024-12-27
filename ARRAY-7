@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main()
+{
+    int size,date,amt,fine=0;
+    printf("Enter the no of vehicles: ");
+    scanf("%d",&size);
+    int arr[size];
+    printf("Enter the last digit of vehicles:\n");
+    for(int i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the date: ");
+    scanf("%d",&date);
+    printf("Enter the fine amount: ");
+    scanf("%d",&amt);
+    int count=0;
+    if(date%2==0)
+    {
+        for(int i=0;i<size;i++)
+        {
+            if(arr[i]%2!=0)
+            {
+              count++;
+            }
+        }
+        printf("No of odd vehicles(Even Date):  %d\n",count);
+    }
+    else
+    {
+        for(int i=0;i<size;i++)
+        {
+            if(arr[i]%2==0)
+            {
+              count++;
+            }
+        }
+         printf("No of even vehicles(Odd Date):  %d\n",count);
+    }
+    
+    printf("Fine amount: %d",count*amt);
+}

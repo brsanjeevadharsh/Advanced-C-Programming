@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main()
+{
+    char str1[30];
+    char str2[30];
+    char str3[30];
+    printf("Enter the string1: ");
+    scanf("%[^\n]s",str1);
+    printf("Enter the string2: ");
+    scanf(" %[^\n]s",str2);
+    printf("Enter the string3: ");
+    scanf(" %[^\n]s",str3);
+    for(int i=0;str1[i]!='\0';i++)
+    {
+    if(str1[i]=='a'||str1[i]=='e'||str1[i]=='i'||str1[i]=='o'||str1[i]=='u')
+    {
+        str1[i]='*';
+    }
+    }
+    for(int i=0;str2[i]!='\0';i++)
+    {
+    if((str2[i]>='a' && str2[i]<='z')&&(str2[i]!='a'&&str2[i]!='e'&&str2[i]!='i'&&str2[i]!='o'&&str2[i]!='u'))
+    {
+        str2[i]='@';
+    }
+    }
+    for(int i=0;str3[i]!='\0';i++)
+    {
+    if(str3[i]>='a'&&str3[i]<='z')
+    {
+        str3[i]=str3[i]-32;
+    }
+    }
+
+    printf("String 1: %s\n",str1);
+    printf("String 2: %s\n",str2);
+     printf("String 3: %s\n",str3);
+}
+
+//Enter the string1: how
+//Enter the string2: are
+//Enter the string3: you
+//String 1: h*w
+//String 2: a@e
+//String 3: YOU

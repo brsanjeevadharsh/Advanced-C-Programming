@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct stu {
+	int roll_no;
+	char name[30];
+	char mail_id[50];
+	int pass_out_year;
+};
+int main() {
+	struct stu *stu2;
+	stu2=(struct stu*)malloc(sizeof(struct stu));
+	scanf("%d %s \n%s %d",&stu2->roll_no,stu2->name,stu2->mail_id,&stu2->pass_out_year);
+	printf("roll no %d",stu2->roll_no);
+	printf("\n name %s",stu2->name);
+	printf("\n mail id %s",stu2->mail_id);
+	printf("\n year %d",stu2->pass_out_year);
+}
+
+// INPUT
+// 172
+// brsanjeevadharsh
+// brsanjeevadharsh@gmail.com
+// 2026
+// OUTPUT
+// roll no 172
+//  name brsanjeevadharsh
+//  mail id brsanjeevadharsh@gmail.com
+//  year 2026

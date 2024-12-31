@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct land
+{
+    float feet;
+    float inch;
+    float totalinches;
+    float totalfeet;
+};
+int main()
+{
+struct land a1,a2;
+printf("Enter the feet:");
+scanf("%f %f",&a1.feet,&a2.feet);
+printf("Enter the inches: ");
+scanf("%f %f",&a1.inch,&a2.inch);
+a1.totalinches=a1.inch+a2.inch;
+a1.totalfeet=a1.feet+a2.feet;
+while(a1.totalinches>=12)
+{
+    a1.totalfeet++;
+    a1.totalinches=a1.totalinches-12;
+}
+printf("Total feet = %f\n",a1.totalfeet);
+printf("Total inches = %.2f",a1.totalinches);
+}
+
+//OUTPUT
+// Enter the feet:23 34
+// Enter the inches: 8.6 6.8
+// Total feet = 58.000000
+// Total inches = 3.40
+
+// === Code Execution Successful ===

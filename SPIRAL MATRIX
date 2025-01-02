@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+    int n1,n2;
+    printf("Enter the size of array 1: ");
+    scanf("%d",&n1);
+    printf("Enter the size of array 2: ");
+    scanf("%d",&n2); 
+    int arr[n1][n2];
+    printf("Enter the elements: ");
+    for(int i=0;i<n1;i++)
+    {
+        for(int j=0;j<n2;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int n=n1*n2;
+    int top=0,bottom=n1-1,left=0,right=n2-1;
+    while(top<=bottom && left<=right)
+    {
+        top=0;
+        for(int i=left;i<=right;i++)
+        {
+            printf("%d ",arr[top][i]);
+        }
+        top++;
+        for(int i=top;i<=bottom;i++)
+        {
+            printf("%d ",arr[i][right]);
+        }
+        right--;
+        if(top<=bottom)
+        {
+            for (int i = right; i >= left; i--)
+            {
+            printf("%d ",arr[bottom][i]);
+            }
+             bottom--;
+        }
+        if (left <= right) {
+      for (int i = bottom; i >= top; i--)
+      {
+          printf("%d ",arr[i][left]);
+      }
+      left++;
+      }
+   }
+}

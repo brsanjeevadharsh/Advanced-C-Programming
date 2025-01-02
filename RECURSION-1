@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int fact(long long int n) {
+    if(n==0) {
+        return 1;
+    }
+    else {
+        return n*fact(n-1);
+    }
+}
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("%d",fact(n));
+}
